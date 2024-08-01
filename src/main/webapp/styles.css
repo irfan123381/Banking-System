@@ -1,47 +1,96 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Updated font for a modern look */
+    background-color: #f4f6f9; /* Light grey background for a softer appearance */
+    color: #333; /* Dark grey text color for better readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box; /* Ensure padding/border is included in height */
 }
 
+/* Welcome Message */
+.welcome-message {
+    margin-top: 20px; /* Space from the top of the viewport */
+    margin-bottom: 30px; /* Space below the welcome message */
+    text-align: center; /* Center-aligns text */
+}
+
+/* Welcome Message Heading */
+.welcome-message h1 {
+    color: #222; /* Slightly darker grey for better contrast */
+    font-size: 28px; /* Larger font size for emphasis */
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Adds padding inside the form */
+    border-radius: 8px; /* Rounds the corners of the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a lifted effect */
+    margin-bottom: 20px; /* Adds vertical spacing around the form */
+    width: 100%;
+    max-width: 400px; /* Sets a maximum width for better responsiveness */
+}
+
+/* Heading Styles */
 h2 {
-    color: #333;
+    color: #222; /* Slightly darker grey for better contrast */
+    margin-top: 0; /* Removes default top margin */
+    margin-bottom: 15px; /* Adds space below the heading */
+    font-size: 26px; /* Larger font size for better emphasis */
+    text-align: center; /* Center-aligns heading text */
 }
 
-form {
-    margin: 20px 0;
-}
-
+/* Label Styling */
 label {
-    display: inline-block;
-    width: 150px;
+    display: block; /* Ensures labels are on their own line */
+    width: 100%; /* Makes labels take up the full width of their container */
+    margin-bottom: 8px; /* Adds space below each label */
+    font-weight: 600; /* Makes label text slightly bolder */
+    font-size: 14px; /* Adjusts font size for clarity */
 }
 
+/* Input Fields and Textareas */
 input[type="text"],
 input[type="password"],
 input[type="date"],
 textarea,
 select {
-    width: 300px;
-    padding: 5px;
-    margin: 5px 0;
+    width: calc(100% - 20px); /* Sets width to fill container minus padding */
+    padding: 10px; /* Adds more padding inside input fields */
+    margin-bottom: 15px; /* Adds vertical spacing around input fields */
+    border: 1px solid #ddd; /* Light border color for a soft look */
+    border-radius: 5px; /* Rounds the corners of input fields */
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width */
 }
 
+/* Submit Button */
 input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+    padding: 12px 24px; /* Adds more padding inside the button */
+    background-color: #007bff; /* Blue background color for the button */
+    color: #ffffff; /* White text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Increases font size for better readability */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0056b3; /* Darker blue background on hover */
 }
 
+/* Link Styling */
 a {
-    text-decoration: none;
-    color: #4CAF50;
+    text-decoration: none; /* Removes underline from links */
+    color: #007bff; /* Blue color for links */
+    font-weight: bold; /* Makes link text bold for emphasis */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adds underline to links on hover */
 }
